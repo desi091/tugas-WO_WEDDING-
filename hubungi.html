@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff0f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            background: white;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff69b4;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        button, .btn-kembali {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        button:hover, .btn-kembali:hover {
+            background-color: #ff1493;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: center;
+            color: #555;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Hubungi Kami</h2>
+        <form action="proses_kontak.php" method="post">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" name="nama" id="nama" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="pesan">Pesan</label>
+            <textarea name="pesan" id="pesan" required></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <a href="tentang.html" class="btn-kembali">⬅ Kembali</a>
+
+        <div class="contact-info">
+            <p>📍 Alamat: Jl. Desa Nanggela No. 123, Greged</p>
+            <p>📞 Telepon: 0831-0222-3339</p>
+            <p>✉ Email: info@desidewianjani7@gmail.com</p>
+            <p><b>📌 Dimana Nya:</b> Kami berada di desa nanggela kecamatan greged kabupaten cirebon.</p>
+        </div>
+    </div>
+
+</body>
+</html>
